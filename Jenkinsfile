@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Pull the code from GitHub
-                    git branch: 'main', url: 'https://github.com/mohansaikiran/sit753-devops-pipeline.git'
+                    git branch: 'main', url: 'https://github.com/likithadt/SIT753-pipeline'
 
                     // Build Docker image
                     sh "docker build -t sit753-devops-pipeline:$BUILD_NUMBER ."
