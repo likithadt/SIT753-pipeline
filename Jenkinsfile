@@ -18,6 +18,7 @@ pipeline {
             steps {
                 script {
                     // Run tests using npm
+                    sh 'rm -rf /Users/mohansaikiran/.jenkins/workspace/sit753-devops/node_modules'
                     sh 'npm install'
                     sh 'npm test'
                 }
